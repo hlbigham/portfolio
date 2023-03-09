@@ -1,0 +1,917 @@
+/* Top Level */
+
+html {
+    min-height: 100%;
+    margin:0;
+    padding:0;    
+}
+
+body{
+    background: linear-gradient(180deg, #4B4B53 29.86%, #383861 58.73%, #3A5581 98.44%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    overflow:overlay;
+    margin:0;
+    padding:0; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolioSection{
+    text-align: center;
+    flex:1;
+}
+
+.caseStudySection{
+    padding:0px 16px;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    margin-top: auto;
+    vertical-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+   
+::-webkit-scrollbar-thumb {
+    background:#D3D3D3;
+    border-radius: 8px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #808080; 
+}
+
+
+/*Navigation*/
+
+.navBackground{
+    background-color: #4B4B53 !important;
+}
+
+.customNav{
+    width: 100%;
+}
+
+
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+  
+.navbar-brand img{
+    padding-right: 15px;
+}
+  
+.nav-item{
+    margin: 0px 15px;
+}
+
+.dropdown-menu{
+    background-color:#4B4B53;
+    opacity:0.9;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#nameLogoContainer{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#nameLogo{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 54px;
+    color:#E6EEFC;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    padding:0;
+}
+
+.dropdown-item:hover{
+    background-color: #1B1B1E;
+}
+
+div a{
+    color:#E6EEFC;
+    text-decoration: none;
+}
+
+li a{
+    color:#E6EEFC !important;
+    text-decoration: none;
+}
+
+.portfolioNav{
+    padding-right: 96px;
+    cursor: pointer;
+}
+
+.portNav2{    
+    text-decoration: underline;
+}
+
+.navItems{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color:#E6EEFC;
+}
+
+.aboutMe2{
+    text-decoration: underline;
+}
+
+.inlineLinks{
+    color:#E6EEFC !important;
+    text-decoration: none;
+}
+
+.navItems:hover, .portfolioNav:hover, .inlineLinks:hover{
+    text-decoration: underline;
+}
+
+
+
+/*.navDropdown{
+    display: inline-block;
+}*/
+
+.dropdown-content{    
+    display:none;
+    position:absolute;
+    background-color:#4B4B53;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 33px;
+    color:#FFFFFF;
+    padding: 8px 8px 8px 8px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.navDropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-tertiary{
+    display: block;
+    padding-top: 8px;
+    color: #E6E6FF;
+}
+
+.dropdown-content2{    
+    display:none;
+    position:static;
+    background-color:#4B4B53;    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.tertiaryItem{
+    font-size: 18px;
+    color: #E6E6FF;
+}
+
+.dropdown-tertiary:hover .dropdown-content2 {
+    display: block;
+}
+
+.tertiaryItem:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Classes */
+
+.roundedCorners{
+    border-radius: 15px;
+}
+
+.figure-caption{
+    color:#E6EEFC;
+    font-weight: 600;
+}
+
+.onTop{
+    z-index: 10;
+}
+
+.inline-block{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.padded{
+    padding-right:34px;
+}
+
+.centeredText{
+    text-align: center;
+
+}
+
+.wordVomit{
+    width:75%;
+    margin:auto;
+    padding:25px
+}
+
+/*About Me Contact Form*/
+
+.centeredForm{
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: auto;    
+    padding-top:50px;
+    padding-bottom:20px;
+    width: 50%;
+}
+
+.buttonContainer{
+    display: block;
+    text-align: center;
+    margin-top: 16px;    
+}
+
+.inputContainer label{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.inputContainer input{
+    width: 100%;
+}
+
+.submitButton{
+    width: 150px;
+    height: 48px;
+    background: #E6E6FF;
+    color: #6060A1;
+    border-radius: 50px;
+    border:none;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.submitButton:hover{
+    background: #6060A1;
+    color:#E6E6FF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+label{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #E6EEFC;
+    padding-bottom: 8px;
+    padding-top: 16px;
+}
+
+
+.freeForm{
+    background: #E6EEFC;
+    border-radius: 10px;
+    border:none;
+    height: 32px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #4B4B53;
+    padding:5px 10px 5px 10px;
+}
+
+.message{
+    width: 100%;
+    height: 300px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* Buttons */
+
+a.buttonLink{
+    text-decoration: none;
+}
+
+.buttons{
+    text-align: center;    
+    margin-top:3%;
+}
+
+.buttons2{
+    padding:50px;
+    padding-top:0;
+    text-align: center;
+}
+
+.block{    
+    display: block;
+}
+
+button.listBlue{
+    display: block;
+    width: 400px;
+    height: 102px;
+    background: #E6EEFC;
+    border: 1px solid #2656A3;
+    box-sizing: border-box;
+    border-radius: 25px;
+    color: #2656A3;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+button.listBlue:hover{
+    background: #2656A3;
+    border: 1px solid #E6EEFC;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #E6EEFC;
+}
+
+button.listBlue1:hover span {
+    display:none
+}
+button.listBlue1:hover:before {
+    content:"Improve user navigation through information architecture."
+}
+
+button.listBlue2:hover span {
+    display:none
+}
+button.listBlue2:hover:before {
+    content:"A mobile app to designed enable book sharing."
+}
+
+button.listBlue3:hover span {
+    display:none
+}
+button.listBlue3:hover:before {
+    content:"Boost volunteer aquisition and retention with site clarity."
+}
+
+button.listPurple{
+    display: block;
+    width: 400px;
+    height: 102px;
+    background: #E6E6FF;
+    border: 1px solid #6060A1;
+    box-sizing: border-box;
+    border-radius: 25px;
+    color: #6060A1;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+button.listPurple:hover{
+    background: #6060A1;
+    border: 1px solid #E6E6FF;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #E6E6FF;
+}
+
+button.listPurple1:hover span {
+    display:none
+}
+button.listPurple1:hover:before {
+    content:"Unifies the branding of an internal knowledge base."
+}
+
+button.listPurple2:hover span {
+    display:none
+}
+button.listPurple2:hover:before {
+    content:"Assists employees addressing credit union members."
+}
+
+button.listPurple3:hover span {
+    display:none
+}
+button.listPurple3:hover:before {
+    content:"Breakdown of a dashboard for new call center agents."
+}
+
+/* Cards */
+
+.cardContainer{
+    display:grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: space-evenly;
+    grid-template-areas: 
+    "techWrite micro infoArch research"
+    ;
+    margin:0 5%;
+}
+
+#techWrite{
+    grid-area: techWrite;
+}
+
+#micro{
+    grid-area: micro;
+}
+
+#research{
+    grid-area: research;
+}
+
+#infoArch{
+    grid-area: infoArch;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    perspective: 1000px;
+    justify-self: center;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    color: #6060A1;
+    background-color: #E6E6FF;
+    border: 1px solid #6060A1;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flip-card-front:hover, .flip-card-back:hover {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.flip-card-back {
+    color: #E6E6FF;
+    background-color: #6060A1;
+    border: 1px solid #E6E6FF;
+    transform: rotateY(180deg);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.flip-card-frontBlue, .flip-card-backBlue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-frontBlue {
+    background-color: #E6EEFC;
+    border: 1px solid #2656A3;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flip-card-frontBlue:hover, .flip-card-backBlue:hover {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.flip-card-backBlue {
+    color: #E6EEFC;
+    background-color: #2656A3;
+    border: 1px solid #E6EEFC;
+    transform: rotateY(180deg);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+/* Typography */
+
+
+h2{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;    
+    color: #E6EEFC;
+}
+
+h3{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;    
+    color: #E6EEFC;
+}
+
+h3.noBold{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;  
+    color: #E6EEFC;
+}
+
+h3.resume{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;    
+    color: #E6EEFC;
+}
+
+h3.purpleCard{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #6060A1;
+}
+
+h3.blueCard{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #2656A3;
+}
+
+h6.dropdownHeader{
+    font-family: Spartan !important;
+    font-weight: 700;
+    font-size: 16px;
+    color:#E6E6FF;
+}
+
+p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #E6EEFC;
+}
+
+p.purpleCard {
+    color: #E6E6FF;
+}
+
+p.blueCard {
+    color: #E6EEFC;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 19px;
+    color: #D3DDED;
+}
+
+p.intro{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+    color: #E6EEFC;
+    text-align: center;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.pageHeader{
+    margin:0px 0px 32px;
+}
+
+/* Case Study */
+
+
+.caseStudyItem{
+    width: 48%;
+    text-align: center;
+}
+
+.accordion {
+    background-color: #E6EEFC;
+    color: #2656A3;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 24px;
+    font-family: Spartan;    
+    font-weight: bold;
+    transition: 0.4s;
+}
+  
+.active, .accordion:hover {
+    background-color: rgba(159, 179, 211, 0.99);
+}
+  
+.accordion:after {
+    content: '\002B';
+    color: #2656A3;
+    font-weight: bold;
+    margin-left: 15px;
+}
+  
+.active:after {
+    content: "\2212";
+}
+  
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.sectionMargin{
+    margin: 8px 0;
+}
+
+.panelMargin{
+    margin: 32px 0;
+}
+
+.alignItemsPlease{
+    align-items: center;
+}
+
+/* Media Query */
+
+@media (max-width: 1200px) and (min-width:600px){
+    header{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;        
+        flex-direction: column;
+    }
+    
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding:0;
+    }
+
+    footer{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        margin-top: auto;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 1%;
+    }
+
+    .dropdown-content{    
+        display:none;
+        width: 100%;
+        background-color:#4B4B53;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 33px;
+        color:#FFFFFF;
+        padding: 8px 8px 8px 8px;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 1;
+    }
+
+    .cardContainer{
+        display:grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 250px 250px;
+        row-gap: 100px;
+        margin:0 2%;
+        grid-template-areas: 
+        "techWrite micro"
+        "research infoArch"
+        ;
+    }
+
+    .centeredForm{
+        margin: auto;    
+        padding-top:50px;
+        padding-bottom:50px;
+        width: 80%;
+    }
+    
+    
+}
+
+@media (max-width:599px){
+    header{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;        
+        flex-direction: column;
+    }
+    
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding:0;
+    }
+
+    footer{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        margin-top: auto;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 1%;
+    }
+
+    .dropdown-content{    
+        display:none;
+        width: 100%;
+        background-color:#4B4B53;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 33px;
+        color:#FFFFFF;
+        padding: 8px 8px 8px 8px;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 1;
+    }
+
+    .cardContainer{
+        display:grid;
+        grid-template-columns: 175px 175px;
+        grid-template-rows: 175px 175px;
+        row-gap: 16px;
+        margin:0 2%;
+        grid-template-areas: 
+        "techWrite micro"
+        "research infoArch"
+        ;
+    }
+
+    .flip-card {
+        width: 175px;
+        height: 175px;
+        cursor: pointer;
+        perspective: 1000px;
+        justify-self: center;
+    }
+
+    .centeredForm{
+        margin: auto;    
+        padding-top:50px;
+        padding-bottom:50px;
+        width: 80%;
+    }
+    
+    h3.purpleCard{
+        font-size: 20px;
+    }
+    
+    h3.blueCard{
+        font-size: 20px;
+    }
+    
+    p.blueCard, p.purpleCard{
+        font-size: 14px;
+        line-height: 20px;
+        margin:2%;
+    }
+
+    #nameLogo{
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    h3.noBold{
+        font-size: 20px;
+    }
+
+    h3.resume{
+        font-size: 22px;
+    }
+    
+    p.intro{
+        font-size: 20px;
+    }
+    
+    button.listPurple, button.listBlue{
+        width: 300px;
+        height: 102px;
+        font-size: 20px;
+        line-height: 33px;
+    }
+    
+    .buttons2{        
+        padding:0 0 50px 0;
+        text-align: center;
+    }
+}
+
+
